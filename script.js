@@ -8,7 +8,7 @@ function loagindItens() {
 
   if (currentTime >= 18 || currentTime < 5) {
     image.src = "noite.jpg";
-    document.body.style.background = "rgb(29, 29, 112);";
+    document.body.style.background = "rgb(29, 29, 112)";
   } else if (currentTime >= 5 && currentTime < 12) {
     image.src = "manha.jpg";
     document.body.style.background = "rgb(196, 163, 54)";
