@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(206, 206, 234);
+    /* background-color: rgb(206, 206, 234); */
+    background-color: rgb(101, 80, 10);
 }
 
 #main {
@@ -9,6 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 30vw;
+    gap: 40px;
 }
 
 header {
