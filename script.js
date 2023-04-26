@@ -1,10 +1,18 @@
 function loagindItens() {
   const message = document.querySelector("#message");
-  const photo = document.querySelector("#image");
+  const image = document.querySelector("#image");
   const date = new Date();
-  const hour = date.getHours();
+  const currentTime = date.getHours();
 
-  message.innerHTML = `now it's ${hour} o'clock`;
+  message.innerHTML = `Now it's ${currentTime} o'clock!`;
+
+  if (currentTime >= 18 || currentTime < 5) {
+    image.src = "noite.jpg";
+  } else if (currentTime >= 5 && currentTime < 12) {
+    image.src = "manha.jpg";
+  } else {
+    image.src = "tarde.jpg";
+  }
 }
 
 document.onload = loagindItens();
